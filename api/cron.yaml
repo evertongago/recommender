@@ -1,0 +1,7 @@
+cron:
+- description: Storage sync job
+  url: /api/sync?force=true
+  schedule: every 30 mins
+- description: Generate recommendation list
+  url: /api/run
+  schedule: every 24 hours

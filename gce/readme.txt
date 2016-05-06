@@ -1,0 +1,1 @@
+gcloud compute instances create recommender --metadata-from-file startup-script=/home/everton.gago/projetos/google_adsense/coach_api/coach/recommender/gce/startup.sh --scopes https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/datastore,https://www.googleapis.com/auth/userinfo.email
