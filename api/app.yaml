@@ -1,4 +1,4 @@
-application: project-id
+application: <project-id>
 version: test
 runtime: python27
 api_version: 1
@@ -6,16 +6,16 @@ threadsafe: true
 
 handlers:
 - url: /api/sync
-  script: coach.main.APP
+  script: src.main.APP
   secure: always
   login: admin
 
 - url: /api/run
-  script: coach.main.APP
+  script: src.main.APP
   secure: always
   login: admin
 
 - url: /api/.*
-  script: coach.main.APP
+  script: src.main.APP
   login: required
   secure: always
