@@ -1,3 +1,2 @@
-pylint
 webob
 webapp2

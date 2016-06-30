@@ -6,11 +6,11 @@ class EntityTestSuite(unittest.TestCase):
 
     def test_access_from_json(self):
         access_json = """{
-               "id" : 12345,
-               "user_id" : 54321,
-               "content_id" : "999",
-               "rate": 2 
-               }"""
+            "id" : 12345,
+            "user_id" : 54321,
+            "content_id" : "999",
+            "rate": 2 
+        }"""
 
         access_map = json.loads(access_json)
         access = entity.AccessEntity.from_dict(access_map)
@@ -22,10 +22,10 @@ class EntityTestSuite(unittest.TestCase):
 
     def test_access_validate_raises_exception(self):
         access_json = """{
-               "id" : 12345,
-               "user_id" : 54321,
-               "rate": 2 
-               }"""
+            "id" : 12345,
+            "user_id" : 54321,
+            "rate": 2 
+        }"""
 
         access_map = json.loads(access_json)
         access = entity.AccessEntity.from_dict(access_map)
