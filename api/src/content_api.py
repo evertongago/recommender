@@ -21,7 +21,8 @@ class AccessHandler(webapp2.RequestHandler):
         user_id = self.get_cookie(cookie_name)
         if not user_id:
             uuid = UUID.uuid4()
-            user_id = uuid.int / 100000000000000000000000
+            user_id = uuid.int
+            print('User ID: ', user_id)
             self.add_cookie(cookie_name, user_id)
 
         ent.user_id = int(data['user_id'])
